@@ -1,6 +1,8 @@
 [toolchain]
 {% if toolchain == "esp" %}
 channel = "esp"
+components = ["rustfmt", "rustc-dev"]
+targets = ["xtensa-esp32-none-elf"]
 {% endif %}
 {% if toolchain == "nightly" %}
 channel = "nightly"
